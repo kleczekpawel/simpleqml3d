@@ -5,9 +5,6 @@ import QtQuick.Scene3D 2.0
 
 ColumnLayout {
 
-    height: 480
-    width: 320
-
     Rectangle {
         id: scene
         Layout.fillHeight: true

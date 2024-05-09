@@ -7,6 +7,15 @@ import Qt3D.Extras 2.0
 Entity {
     id: sceneRoot
 
+    /*******************************************************************************/
+
+    // Add custom model to the scene (see: CustomModel.qml).
+    CustomModel {
+        scale: 1.0
+    }
+
+    /*******************************************************************************/
+
     //Adding camera
     Camera {
         id: camera
@@ -14,7 +23,6 @@ Entity {
         fieldOfView: 45
         nearPlane : 0.1
         farPlane : 1000.0
-//        position: Qt.vector3d( 2.0, 2.0, 2.0 )
         position: Qt.vector3d( 0.0, 1.2, 0.0 )
         upVector: Qt.vector3d( 0.0, 1.0, 0.0 )
         viewCenter: Qt.vector3d( 0.0, 0.0, 0.0 )
@@ -75,16 +83,7 @@ Entity {
         ]
     }
 
-
 /*******************************************************************************/
-    //And the Iron man model. Read IronMan.qml
 
-//    IronMan{
-//        scale: 0.3
-//    }
-
-    IronMan{
-        scale: 1.0
-    }
 
 }

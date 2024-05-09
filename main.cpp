@@ -6,20 +6,13 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 
-
-//#include <QtWidgets/QApplication>
-//#include <QtQuick/QQuickView>
-//#include <QtQml/QQmlContext>
-//#include <QtQml/QQmlEngine>
-//#include <QUrl>
-
 #include <iostream>
 
 void setSurfaceFormat()
 {
     QSurfaceFormat format;
 #ifdef QT_OPENGL_ES_2
-    std::cout << "Format: ES2" << std::endl;
+    throw std::runtime_error("ES2 not supported!");
     format.setRenderableType(QSurfaceFormat::OpenGLES);
 #else
     std::cout << "Format: GL" << std::endl;
@@ -39,20 +32,7 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
     setSurfaceFormat();
 
-//    QApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
-//    QApplication app(argc, argv);
-
     QQuickView viewer;
-
-    /*
-     * if you want you can create custom c++ backend and call slots of them from qml
-     *
-    viewer.setTitle(QStringLiteral("360Shop"));
-    viewer.setResizeMode(QQuickView::SizeRootObjectToView);
-    BackEnd backend(viewer);
-    viewer.rootContext()->setContextProperty("backEnd", &backend);
-    QObject::connect(viewer.engine(), &QQmlEngine::quit, &viewer, &QWindow::close);
-    */
 
     viewer.resize(800, 800);
     viewer.setResizeMode(QQuickView::SizeRootObjectToView);

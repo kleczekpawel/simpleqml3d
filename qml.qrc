@@ -2,9 +2,9 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>ThreeDimensionalScene.qml</file>
-        <file>IronMan.qml</file>
+        <file>CustomModel.qml</file>
         <file>RenderableEntity.qml</file>
-        <file>SimpleMaterial.qml</file>
+        <file>HeatmapMaterial.qml</file>
         <file>heatmap.png</file>
         <file>grid_moved_heat.obj</file>
     </qresource>
