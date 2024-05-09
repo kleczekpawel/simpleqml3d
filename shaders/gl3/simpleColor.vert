@@ -29,6 +29,7 @@ void main()
     texCoord = vec2(vertexTexCoord.x, vertexTexCoord.y);  // whole texture
     texCoord = vec2(vertexTexCoord.x, 0.0);  // bottom row
     texCoord = vec2(0.0, vertexTexCoord.y);  // left column
+    texCoord = vec2(0.0, vertexTexCoord.x);
 
     //    position = vec3(modelView * vec4(vertexPosition, 1.0));
     position = vec3(modelMatrix * vec4(vertexPosition, 1.0));

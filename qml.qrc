@@ -4,9 +4,8 @@
         <file>ThreeDimensionalScene.qml</file>
         <file>IronMan.qml</file>
         <file>RenderableEntity.qml</file>
-        <file>cube.obj</file>
-        <file>grid_moved.obj</file>
-        <file>texture.png</file>
         <file>SimpleMaterial.qml</file>
+        <file>heatmap.png</file>
+        <file>grid_moved_heat.obj</file>
     </qresource>
 </RCC>

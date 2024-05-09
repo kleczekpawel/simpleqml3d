@@ -79,12 +79,12 @@ Entity {
 /*******************************************************************************/
     //And the Iron man model. Read IronMan.qml
 
-    IronMan{
-        scale: 0.3
-    }
-
 //    IronMan{
-//        scale: 1.0
+//        scale: 0.3
 //    }
+
+    IronMan{
+        scale: 1.0
+    }
 
 }

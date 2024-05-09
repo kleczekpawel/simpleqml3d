@@ -54,7 +54,8 @@ int main(int argc, char *argv[])
     QObject::connect(viewer.engine(), &QQmlEngine::quit, &viewer, &QWindow::close);
     */
 
-
+    viewer.resize(800, 800);
+    viewer.setResizeMode(QQuickView::SizeRootObjectToView);
     viewer.setSource(QUrl("qrc:/main.qml"));
     viewer.show();
     return app.exec();

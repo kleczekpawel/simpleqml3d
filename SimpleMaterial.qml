@@ -18,7 +18,8 @@ Material {
             value: Texture2D {
                 id: texture
                 TextureImage {
-                    source: "qrc:/texture.png"
+//                    source: "qrc:/texture.png"
+                    source: "qrc:/heatmap.png"
                 }
             }
         }

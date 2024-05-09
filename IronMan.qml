@@ -20,7 +20,8 @@ Entity {
     RenderableEntity{
         id: chest
 //        source: "qrc:/man.obj"
-        source: "qrc:/grid_moved.obj"
+//        source: "qrc:/grid_moved.obj"
+        source: "qrc:/grid_moved_heat.obj"
         position: Qt.vector3d(root.x, root.y, root.z)
         scale:  root.scale
 
