@@ -14,7 +14,8 @@ Entity {
         fieldOfView: 45
         nearPlane : 0.1
         farPlane : 1000.0
-        position: Qt.vector3d( 0.0, 1.0, 1.0 )
+//        position: Qt.vector3d( 2.0, 2.0, 2.0 )
+        position: Qt.vector3d( 0.0, 1.2, 0.0 )
         upVector: Qt.vector3d( 0.0, 1.0, 0.0 )
         viewCenter: Qt.vector3d( 0.0, 0.0, 0.0 )
     }
@@ -39,7 +40,7 @@ Entity {
     Entity {
         PlaneMesh {
             id: groundMesh
-            width: 50
+            width: 2
             height: width
             meshResolution: Qt.size(2, 2)
         }
@@ -79,7 +80,11 @@ Entity {
     //And the Iron man model. Read IronMan.qml
 
     IronMan{
-    scale: 0.3
+        scale: 0.3
     }
+
+//    IronMan{
+//        scale: 1.0
+//    }
 
 }

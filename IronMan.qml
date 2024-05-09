@@ -13,17 +13,18 @@ Entity {
     Texture2D{
         id: texture
         TextureImage {
-            source: "qrc:/man.png"
+            source: "qrc:/texture.png"
         }
     }
 
-    //COPY RenderableEntity.qml in your project!!!!!!
     RenderableEntity{
         id: chest
-        source: "qrc:/man.obj" //Path to iron man model. You can open it with 3D Builder on Windows 10
+//        source: "qrc:/man.obj"
+        source: "qrc:/grid_moved.obj"
         position: Qt.vector3d(root.x, root.y, root.z)
         scale:  root.scale
 
+//        material : PhongMaterial { }
         material: DiffuseMapMaterial {
             id: material
             diffuse:  texture

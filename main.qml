@@ -8,23 +8,6 @@ ColumnLayout {
     height: 480
     width: 320
 
-    Rectangle{
-    Layout.fillWidth: true
-    height: 75
-    color: "#41CD52"
-
-    Label {
-        text: "Iron man"
-        color: "white"
-        anchors.fill: parent
-        font.pixelSize: 20
-        elide: Label.ElideRight
-        horizontalAlignment: Qt.AlignHCenter
-        verticalAlignment: Qt.AlignVCenter
-        Layout.fillWidth: true
-    }
-    }
-
     Rectangle {
         id: scene
         Layout.fillHeight: true

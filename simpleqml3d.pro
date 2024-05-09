@@ -1,6 +1,6 @@
 TEMPLATE = app
 
-QT += core gui widgets 3dcore 3drender 3dinput 3dquick qml quick 3dquickextras
+QT += qml quick 3dextras
 CONFIG += c++11
 
 SOURCES += main.cpp

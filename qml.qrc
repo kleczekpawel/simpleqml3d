@@ -4,7 +4,8 @@
         <file>ThreeDimensionalScene.qml</file>
         <file>IronMan.qml</file>
         <file>RenderableEntity.qml</file>
-        <file>man.obj</file>
-        <file>man.png</file>
+        <file>cube.obj</file>
+        <file>grid_moved.obj</file>
+        <file>texture.png</file>
     </qresource>
 </RCC>
