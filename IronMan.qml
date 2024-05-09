@@ -24,12 +24,15 @@ Entity {
         position: Qt.vector3d(root.x, root.y, root.z)
         scale:  root.scale
 
-//        material : PhongMaterial { }
-        material: DiffuseMapMaterial {
+        material : SimpleMaterial {
             id: material
-            diffuse:  texture
-            specular: Qt.rgba( 0.2, 0.2, 0.2, 1.0 )
-            shininess: 2.0
         }
+//        material : PhongMaterial { }
+//        material: DiffuseMapMaterial {
+//            id: material
+//            diffuse:  texture
+//            specular: Qt.rgba( 0.2, 0.2, 0.2, 1.0 )
+//            shininess: 2.0
+//        }
     }
 }
